@@ -7,22 +7,22 @@ import { motion, useInView } from "framer-motion";
 const projectsData = [
   {
     id: 1,
-    title: "React Portfolio Website",
+    title: "Cripto Aprendes Website",
     description: "Project 1 description",
     image: "/images/projects/1.png",
     tag: ["All", "Web"],
     gitUrl: "/",
     //previewUrl: "/",
-    previewUrl: "https://www.google.com",
+    previewUrl: "https://sveltecriptoaprendes-m8vtg4ej5-eurorondon.vercel.app/",
   },
   {
     id: 2,
-    title: "Potography Portfolio Website",
+    title: "Modern Ecommerce",
     description: "Project 2 description",
     image: "/images/projects/2.png",
     tag: ["All", "Web"],
     gitUrl: "/",
-    previewUrl: "https://www.vercel.com",
+    previewUrl: "https://modern-ecommerce-nu.vercel.app/",
   },
   {
     id: 3,
@@ -31,7 +31,7 @@ const projectsData = [
     image: "/images/projects/3.png",
     tag: ["All", "Web"],
     gitUrl: "/",
-    previewUrl: "https://www.google.com",
+    previewUrl: "https://wasi-proyect-8cqs.vercel.app/",
   },
   {
     id: 4,
