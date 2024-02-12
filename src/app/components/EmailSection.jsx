@@ -16,25 +16,27 @@ const EmailSection = () => {
       message: e.target.message.value,
     };
     const JSONdata = JSON.stringify(data);
-    const endpoint = "/api/send";
+    const endpointClient = "/api/sendToClient";
+    const endpointAdmin = "/api/sendToAdmin";
 
-    // Form the request for sending data to the server.
     const options = {
-      // The method is POST because we are sending data.
       method: "POST",
-      // Tell the server we're sending JSON.
       headers: {
         "Content-Type": "application/json",
       },
-      // Body of the request is the JSON data we created above.
       body: JSONdata,
     };
 
-    const response = await fetch(endpoint, options);
-    const resData = await response.json();
+    const responseClient = await fetch(endpointClient, options);
+    const responseAdmin = await fetch(endpointAdmin, options);
 
-    if (response.status === 200) {
-      console.log("Message sent.");
+    if (responseClient.status === 200) {
+      console.log("Message Client sent.");
+      setEmailSubmitted(true);
+    }
+
+    if (responseAdmin.status === 200) {
+      console.log("Message Admin sent.");
       setEmailSubmitted(true);
     }
   };

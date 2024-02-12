@@ -9,13 +9,16 @@ export async function POST(req, res) {
   console.log(email, subject, message);
   try {
     const data = await resend.emails.send({
-      from: "Euro <onboarding@resend.dev>",
+      from: "admin@lepecreativo.com",
       to: [email],
       subject: subject,
       react: (
         <>
           <h1>{subject}</h1>
-          <p>Thank you for contacting us!</p>
+          <p>
+            Gracias por contactarnos, Hemos recibido tu Mensaje. Pronto nos
+            pondremos en contacto.
+          </p>
           <p>New message submitted:</p>
           <p>{message}</p>
         </>

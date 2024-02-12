@@ -8,11 +8,11 @@ const projectsData = [
   {
     id: 1,
     title: "Full-stack Roadmap",
-    description: "Project 5 description",
+    description: "Project  description",
     image: "/images/projects/6.png",
     tag: ["All", "Web"],
     gitUrl: "/",
-    previewUrl: "https://ecommers-food-market-place.vercel.app/",
+    previewUrl: "https://foodies-restaurant-euro.vercel.app/",
   },
   {
     id: 2,
@@ -58,7 +58,7 @@ const projectsData = [
     image: "/images/projects/4.png",
     tag: ["All", "Mobile"],
     gitUrl: "/",
-    previewUrl: "https://www.google.com",
+    previewUrl: "https://sveltecriptoaprendes.vercel.app/",
   },
 
   {
