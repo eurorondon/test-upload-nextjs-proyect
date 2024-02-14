@@ -52,14 +52,14 @@ const EmailSection = () => {
           Let&apos;s Connect
         </h5>
         <p className="text-[#ADB7BE] mb-4 max-w-md">
-          I&apos;m currently looking for new opportunities, my inbox is always
-          open. Whether you have a question or just want to say hi, I&apos;ll
-          try my best to get back to you!
+          Actualmente estoy en busca de nuevas oportunidades y mi bandeja de
+          entrada está siempre abierta. Ya sea que tengas una pregunta o
+          simplemente quieras saludar, ¡haré lo posible por responder!
         </p>
         <div className="socials flex flex-row gap-2">
-          <Link href="github.com">
+          {/* <Link href="github.com">
             <Image src={GithubIcon} alt="Github Icon" />
-          </Link>
+          </Link> */}
           <Link href="linkedin.com">
             <Image src={LinkedinIcon} alt="Linkedin Icon" />
           </Link>
@@ -77,7 +77,7 @@ const EmailSection = () => {
                 htmlFor="email"
                 className="text-white block mb-2 text-sm font-medium"
               >
-                Your email
+                Email
               </label>
               <input
                 name="email"
@@ -85,7 +85,7 @@ const EmailSection = () => {
                 id="email"
                 required
                 className="bg-[#18191E] border border-[#33353F] placeholder-[#9CA2A9] text-gray-100 text-sm rounded-lg block w-full p-2.5"
-                placeholder="jacob@google.com"
+                placeholder="tumismo@google.com"
               />
             </div>
             <div className="mb-6">
@@ -93,7 +93,7 @@ const EmailSection = () => {
                 htmlFor="subject"
                 className="text-white block text-sm mb-2 font-medium"
               >
-                Subject
+                Asunto
               </label>
               <input
                 name="subject"
@@ -101,7 +101,7 @@ const EmailSection = () => {
                 id="subject"
                 required
                 className="bg-[#18191E] border border-[#33353F] placeholder-[#9CA2A9] text-gray-100 text-sm rounded-lg block w-full p-2.5"
-                placeholder="Just saying hi"
+                placeholder="Subjet"
               />
             </div>
             <div className="mb-6">
@@ -109,20 +109,20 @@ const EmailSection = () => {
                 htmlFor="message"
                 className="text-white block text-sm mb-2 font-medium"
               >
-                Message
+                Mensaje
               </label>
               <textarea
                 name="message"
                 id="message"
                 className="bg-[#18191E] border border-[#33353F] placeholder-[#9CA2A9] text-gray-100 text-sm rounded-lg block w-full p-2.5"
-                placeholder="Let's talk about..."
+                placeholder="Hablemos sobre..."
               />
             </div>
             <button
               type="submit"
               className="bg-amber-400 hover:bg-orange-400 text-white font-medium py-2.5 px-5 rounded-lg w-full"
             >
-              Send Message
+              Enviar Mensaje
             </button>
           </form>
         )}
